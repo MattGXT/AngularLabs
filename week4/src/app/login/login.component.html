@@ -1,0 +1,14 @@
+<div class="login-form">
+    <form #loginform="ngForm">
+        <h2 class="text-center">Log in</h2>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" [(ngModel)]="email" name = "email" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="pwd" name = "pwd" required="required">
+        </div>
+        <div class="form-group">
+            <button (click)="itemclicked()" class="btn btn-primary btn-block">Log in</button>
+        </div>
+    </form>
+</div>
