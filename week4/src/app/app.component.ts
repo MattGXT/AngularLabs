@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'week4';
+  constructor(private router: Router) {
+   }
+
+  title = 'week5';
+
+  itemclicked(){
+    sessionStorage.clear();
+    this.router.navigate(['/login']);
+  }
 }
